@@ -1,22 +1,16 @@
 <div class="test">
-    <h3>Đây là componnet home</h3>
-    <!-- <h2>Chào bạn {{ name }}</h2>
-    <input value="{{ name  }}" />
-    <br/>
-    <h2 *ngIf="age > 18"> Bạn quá già rồi !</h2>
-    <h2 *ngIf="age <= 18"> Bạn quá trẻ nè !</h2> -->
-    <br/>
-    <!-- <input type="text" [(ngModel)]="name" />
-    <h2> Chào Bạn {{ name }}</h2>
-    <button (click)="resetName()">Reset tên</button>  -->
-    <input type="text" [(ngModel)]="age" />
-    <h3> Tuổi bạn là {{ age }}</h3>
-    <!-- <h2 *ngIf="age > 18"> Bạn quá già rồi !</h2>
-    <h2 *ngIf="age <= 18"> Bạn quá trẻ nè !</h2> -->
-    <div *ngIf="age <= 18; then tre; else gia"></div>
-    <ng-template #gia><h2> Bạn quá già rồi !</h2></ng-template>
-    <ng-template #tre><h2> Bạn quá trẻ nè !</h2></ng-template>
-
-
+  <h1>Đây là component home</h1>
+  <h3>Trái Cây</h3>
+  Tỉnh / thành phố:
+  <select id="city">
+    <option *ngFor="let data of vietnamData" value="">
+      {{ data.city}}
+    </option>
+  </select>
+  <br />
+  Quận / Huyện:
+  <section id="district">
+    <option value="volvo">Volvo</option>
+  </select>
 
 </div>
